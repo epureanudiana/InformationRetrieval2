@@ -7,7 +7,9 @@ EPOCHS = 1
 LEARNING_RATE = 2e-5
 PRE_TRAINED_MODEL_NAME = 'bert-base-cased'
 
-
+"""
+Method used for parsing command line arguments.
+"""
 def arg_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('--random_seed', type=int, default=RANDOM_SEED,
